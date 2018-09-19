@@ -21,9 +21,7 @@ cutOff_k <- function(x1, x2, k) {
     .Call(`_FSelectorRcpp_cutOff_k`, x1, x2, k)
 }
 
-discretize_cpp <- function(x, y, discControl) {
-    .Call(`_FSelectorRcpp_discretize_cpp`, x, y, discControl)
-}
+
 
 information_gain_cpp <- function(xx, y, threads = 1L) {
     .Call(`_FSelectorRcpp_information_gain_cpp`, xx, y, threads)
